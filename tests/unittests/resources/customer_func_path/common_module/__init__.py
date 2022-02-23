@@ -3,8 +3,7 @@
 import os
 
 
-FUNCTION_APP = "function_app"
-__version__: str == FUNCTION_APP
+__version__: str = "function_app"
 
 # This module should be shadowed from customer_deps_path/common_module
 # ./tests/unittests/resources/customer_func_path/common_module
