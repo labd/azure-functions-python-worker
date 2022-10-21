@@ -108,14 +108,14 @@ PACKAGES = [
 INSTALL_REQUIRES = [
     "grpcio~=1.43.0",
     "grpcio-tools~=1.43.0",
-    "protobuf~=3.19.3",
+    "protobuf~=4.21.7",
     'azure-functions==1.12.0',
     "python-dateutil~=2.8.2"
 ]
 
 EXTRA_REQUIRES = {
     "dev": [
-        "azure-eventhub~=5.7.0",  # Used for EventHub E2E tests
+        "azure-eventhub~=5.10.1",  # Used for EventHub E2E tests
         "azure-functions-durable",  # Used for Durable E2E tests
         "flask",
         "fastapi~=0.85.0",  # Used for ASGIMiddleware test
