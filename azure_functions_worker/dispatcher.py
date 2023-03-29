@@ -263,8 +263,8 @@ class Dispatcher(metaclass=DispatcherMeta):
 
     async def _handle__worker_init_request(self, request):
         logger.info('Received WorkerInitRequest, '
-                    'python version %s, worker version %s, request ID %s',
-                    sys.version, VERSION, self.request_id)
+                    'python version %s, worker version %s, request ID %s sys.path %s sys.modules %s',
+                    sys.version, VERSION, self.request_id, sys.path, sys.modules)
         enable_debug_logging_recommendation()
 
         worker_init_request = request.worker_init_request
